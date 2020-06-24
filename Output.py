@@ -1,5 +1,5 @@
 from tkinter import *
-import Grid, Snake, Food, Instance, math
+import Grid, Snake, Food, math
 
 
 class Table:
@@ -300,14 +300,12 @@ class Ui:
             elif i == 'Waves':
                 self.info[i]['sin']['data'] = [['sin', 'cos'], ['#0000FF', '#FF0000'], [math.sin(self.angle), math.cos(self.angle)]]
                 self.angle += 0.3
+
     def update(self, data):
         self.data = data
         self.update_info()
 
     def update_info(self):
-        if self.test:
-            self.test.set_test(int(120 * math.sin(self.tc) // 1 + 1))
-            self.tc += 0.1
         self.assemble_info()
         for i in self.info:
             for j in self.info[i]:

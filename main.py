@@ -1,7 +1,6 @@
-
 from tkinter import *
 from time import sleep
-import Grid, Food, Snake, random, Output, Instance
+import Grid, Food, Snake, random, Output
 
 
 def updateinfo():
@@ -14,7 +13,6 @@ def updateinfo():
     info = {'world age': world_counter, 'snakes': snk, 'foods': fod, 'grid': grd}
 
 
-info_test = Instance.Instance(120)
 
 root = Tk()
 
@@ -51,7 +49,7 @@ world_counter = 0  # basically a global counter used for refreshing at different
 map = Output.Table(root, grd, w, h, siz=800 // h)
 
 updateinfo()  # in this case sets it up
-ui = Output.Ui(root, grd, map, info, test=info_test)  # all the other shit in the window
+ui = Output.Ui(root, grd, map, info, )  # all the other shit in the window
 
 while True:  # main world loop
     # input()
@@ -150,7 +148,6 @@ while True:  # main world loop
         updateinfo()
         ui.update(info)
 
-    #sleep(0.2)
     world_counter += 1
     root.update_idletasks()
     root.update()
