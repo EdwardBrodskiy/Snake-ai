@@ -4,4 +4,4 @@ This is a world simulation based on the snake game however, here the snake popul
 
 This is one of my earlier projects so many things were done wrong but it was a good learning experience.
 
-![Alt text](https://github.com/EdwardBrodskiy/Snake-ai/blob/master/preview%20snake.png)
+![Alt text](https://github.com/EdwardBrodskiy/Snake-ai/blob/master/sample-images/full-view.png)
